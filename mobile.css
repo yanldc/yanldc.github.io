@@ -1,0 +1,145 @@
+@media(max-width: 450px){
+
+footer {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 0.4px solid #F5F5F5;
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  text-align: center;
+}    
+
+/* menu Principal horizontal*/
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .cabecalho-imagem {
+    height: 40px;
+    background: rgba(185, 235, 210, 0.63);
+    border-radius: 50%;
+    margin-left: 0.5%;
+    margin-top: 1%;
+  }
+  
+  .cabecalho ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 6px;
+  }
+  
+  .cabecalho ul li a{
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+  }
+  
+  .cabecalho ul li a:hover{
+  color: rgb(185, 235, 210);
+  }
+  
+  /* sub menu */
+  
+  .cabecalho ul ul{
+    display: none;
+  }
+  
+  .cabecalho ul li:hover ul{
+    display: block;
+    position:absolute;
+    margin-top: 4%; 
+    margin-left: -2%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 0px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 5px;
+  }
+  
+  .cabecalho ul ul{
+    width: 95px;
+  }
+
+
+
+  /* Corpo da Pg */
+  .conteudo {
+    margin-bottom: 48px;
+    border-top: 0.8px solid #F5F5F5;
+  }
+  
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 5%;
+    gap: 30px;
+  }
+  
+  .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #F5F5F5;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .conteudo-principal-imagem {
+    height: 250px;
+    border: 2px solid rgb(185, 235, 210);
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .titulo {
+    font-weight: 500;
+    font-size: 28px;
+    color: #F5F5F5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .titulo-simples{
+    font-weight: 500;
+    font-size: 28px;
+    color: #F5F5F5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2%;
+  }
+  .conteudo-simples{
+    gap: 50px;
+    color: #F5F5F5;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding-top: 2%;
+  }
+  .conteudo-secundario-imagem {
+    height: 180px;
+    border: 2px solid rgb(185, 235, 210);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor</title>
+  <link rel="shortcut icon" href="fotos/logo.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="fotos/logo.png">
+    <nav class="cabecalho-menu">
+      <ul>
+      <li><a class="cabecalho-menu-item" href="index.html">Quem sou </a></li>
+      <li><a class="cabecalho-menu-item" href="formacao.html">Formação </a></li>
+      <li><a class="cabecalho-menu-item" href="profissional.html">Profissional </a></li>
+      <li><a class="cabecalho-menu-item" href="#">Hobbys </a>
+         <ul>
+           <li><a class="cabecalho-menu-item" href="pc.html">Computadores</a></li>
+           <li><a class="cabecalho-menu-item" href="geek.html">Geek     </a></li>
+           <li><a class="cabecalho-menu-item" href="musica.html">Musica   </a></li>
+         </ul>
+       </li>
+        <li><a class="cabecalho-menu-item" href="desenvolvimento.html">Desenvolvimento </a></li>
+      </ul>
+    </nav>
+  </header>
+	<div>
+<main class="conteudo">
+  <section class="conteudo-principal-escrito">
+<div class="titulo2">REAL PARA DOLAR E EURO E BITCOIN </div>
+  <div class="tabela">
+    <label for="moeda"><h5>Insira o valor em Reais</h5></label>
+    <input type="number" id="valorMoeda" size="2" />
+    <button type="submit" onclick="ConverterMoeda()">Converter</button><br>
+    <h5 id="valorMoedaConvertido"></h5>
+  </div><br><br>
+<div class="titulo2"> DISTÂNCIA KM EM ANOS LUZ </div>
+  <div class="tabela">
+    <label for="distancia"><h5>KM a serem percorridos</h5></label>
+    <input type="number" id="valorDistancia" size="2" />
+    <button type="submit" onclick="ConverterDistancia()">Converter</button>
+    <h5 id="valorDistanciaConvertido"></h5>
+  </div><br><br>
+<div class="titulo2">CONVERSOR DE TEMPERATURAS </div>
+  <div class="tabela">
+    <label for="temperatura"><h5>Insira em graus Celcius</h5></label>
+    <input type="number" id="valorTemperatura" size="2" />
+    <button type="submit" onclick="ConverterTemperatura()">Converter</button>
+    <h5 id="valorTemperaturaConvertido"></h5>
+</div><br><br><br>
+ </section>
+  </main>
+
+  <footer>
+    <div>Site todo desenvolvido por Yan Lemke de Castro</div>
+    <div>@yanldc©</div>
+    <div><a href="https://www.instagram.com/yanldc/" target="_blank"><img src="fotos/insta.png"  width="20" height="20"></a>
+    <a href="https://www.linkedin.com/in/yan-lemke-de-castro-889151249" target="_blank"><img src="fotos/linkedin.png" width="20" height="20"></a>
+    <a href="https://github.com/yanldc" target="_blank"><img src="fotos/github.png" width="20" height="20"></a></div>
+  </footer>
+</body>
+<script src="conversor.js"></script>
