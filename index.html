@@ -4,51 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quem sou</title>
+  <meta name="description" content="Portfólio de Yan Lemke — Desenvolvedor Full Stack com experiência em Node.js, React, TypeScript e Java Spring Boot.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yan Lemke — Desenvolvedor Full Stack">
+  <meta property="og:description" content="Portfólio de Yan Lemke — Desenvolvedor Full Stack com experiência em Node.js, React, TypeScript e Java Spring Boot.">
+  <meta property="og:image" content="https://yanldc.github.io/fotos/yan.jpg">
+  <meta property="og:url" content="https://yanldc.github.io">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yan Lemke — Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Portfólio de Yan Lemke — Desenvolvedor Full Stack com experiência em Node.js, React, TypeScript e Java Spring Boot.">
+  <meta name="twitter:image" content="https://yanldc.github.io/fotos/yan.jpg">
+  <title>Yan Lemke — Portfólio</title>
   <link rel="shortcut icon" href="fotos/logo.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="mobile.css">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <img class="cabecalho-imagem" src="fotos/logo.png">
-    <nav class="cabecalho-menu">
-      <ul>
-        <li><a class="cabecalho-menu-item" href="index.html">Quem sou </a></li>
-        <li><a class="cabecalho-menu-item" href="formacao.html">Formação </a></li>
-        <li><a class="cabecalho-menu-item" href="profissional.html">Profissional </a></li>
-        <li><a class="cabecalho-menu-item" href="#">Hobbys </a>
-          <ul>
-            <li><a class="cabecalho-menu-item" href="pc.html">Computadores</a></li>
-            <li><a class="cabecalho-menu-item" href="geek.html">Geek </a></li>
-            <li><a class="cabecalho-menu-item" href="musica.html">Musica </a></li>
-          </ul>
-        </li>
-        <li><a class="cabecalho-menu-item" href="desenvolvimento.html">Desenvolvimento </a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="menu-nav"></div>
 
   <main class="conteudo">
     <section class="conteudo-principal">
       <div class="conteudo-principal-escrito">
-        <h2 class="titulo">Quem sou ??</h2>
-        <h3 class="conteudo-principal-escrito">Olá me chamo Yan Lemke e atualmente estou cursando Tecnologia em Sistemas para Internet no Instituto Federal Goiano- campus Morrinhos, a experiência que possuo na área de TI vem de trabalhos propostos em sala de aula e pesquisas externas, por esta ser minha área de interesse possuo uma grande vontade de aprender e me desenvolver cada vez mais.<br>
-          Devido ao curso de técnico de informático que cursei no IF-Goiano e alguns pequenos trabalhos ao longos do anos possuo certo conhecimento em manutenção de computadores e redes básicas.
-          Sou formado em Agronomia também pelo IF-Goiano e atualmente trabalho como laboratorista pela Bioygeo Ambiental.</h3>
+        <h2 class="titulo">Olá, sou Yan Lemke 👋</h2>
+        <p>Desenvolvedor Full Stack com maior experiência em back-end, atuando em projetos com JavaScript, TypeScript, Node.js, React e bancos de dados relacionais e não relacionais.</p>
+        <p>Experiência com metodologias ágeis (Scrum) e boas práticas de versionamento. Vivência no desenvolvimento de APIs, manutenção de sistemas e integração de tecnologias. Sólida base em suporte técnico e infraestrutura de TI — incluindo montagem, manutenção de computadores e redes.</p>
+        <p style="color: rgb(185,235,210); font-weight: 500;">Atualmente Desenvolvedor Back-end Júnior na Compass UOL — sempre em busca de novos desafios.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/yan-lemke-de-castro-889151249" target="_blank" class="social-btn social-btn-linkedin">
+            <img src="fotos/linkedin.png" width="18" height="18" alt="LinkedIn"> LinkedIn
+          </a>
+          <a href="https://github.com/yanldc" target="_blank" class="social-btn social-btn-github">
+            <img src="fotos/github.png" width="18" height="18" alt="GitHub"> GitHub
+          </a>
+        </div>
+        <a href="curriculo.pdf" download class="btn-download">
+          ⬇ Baixar Currículo em PDF
+        </a>
       </div>
-      <img class="conteudo-principal-imagem" src="fotos/yan.jpg">
+      <img class="conteudo-principal-imagem" src="fotos/yan.jpg" alt="Foto de Yan Lemke">
     </section>
   </main>
 
-  <footer>
-    <div>Site todo desenvolvido por Yan Lemke de Castro</div>
-    <div>@yanldc©</div>
-    <div><a href="https://www.instagram.com/yanldc/" target="_blank"><img src="fotos/insta.png"  width="20" height="20"></a>
-    <a href="https://www.linkedin.com/in/yan-lemke-de-castro-889151249" target="_blank"><img src="fotos/linkedin.png" width="20" height="20"></a>
-    <a href="https://github.com/yanldc" target="_blank"><img src="fotos/github.png" width="20" height="20"></a></div>
-  </footer>
+  <div id="footer-nav"></div>
+  <script src="footer.js" defer></script>
+  <script src="menu.js" defer></script>
 </body>
 
 </html>

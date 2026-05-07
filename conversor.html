@@ -4,64 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conversor</title>
+  <meta name="description" content="Conversor de moedas, distâncias e temperaturas em JavaScript — projeto de Yan Lemke.">
+  <title>Conversor de Valores — Yan Lemke</title>
   <link rel="shortcut icon" href="fotos/logo.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="mobile.css">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <img class="cabecalho-imagem" src="fotos/logo.png">
-    <nav class="cabecalho-menu">
-      <ul>
-      <li><a class="cabecalho-menu-item" href="index.html">Quem sou </a></li>
-      <li><a class="cabecalho-menu-item" href="formacao.html">Formação </a></li>
-      <li><a class="cabecalho-menu-item" href="profissional.html">Profissional </a></li>
-      <li><a class="cabecalho-menu-item" href="#">Hobbys </a>
-         <ul>
-           <li><a class="cabecalho-menu-item" href="pc.html">Computadores</a></li>
-           <li><a class="cabecalho-menu-item" href="geek.html">Geek     </a></li>
-           <li><a class="cabecalho-menu-item" href="musica.html">Musica   </a></li>
-         </ul>
-       </li>
-        <li><a class="cabecalho-menu-item" href="desenvolvimento.html">Desenvolvimento </a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="menu-nav"></div>
 	<div>
 <main class="conteudo">
-  <section class="conteudo-principal-escrito">
-<div class="titulo2">REAL PARA DOLAR E EURO E BITCOIN </div>
-  <div class="tabela">
-    <label for="moeda"><h5>Insira o valor em Reais</h5></label>
-    <input type="number" id="valorMoeda" size="2" />
-    <button type="submit" onclick="ConverterMoeda()">Converter</button><br>
-    <h5 id="valorMoedaConvertido"></h5>
-  </div><br><br>
-<div class="titulo2"> DISTÂNCIA KM EM ANOS LUZ </div>
-  <div class="tabela">
-    <label for="distancia"><h5>KM a serem percorridos</h5></label>
-    <input type="number" id="valorDistancia" size="2" />
-    <button type="submit" onclick="ConverterDistancia()">Converter</button>
-    <h5 id="valorDistanciaConvertido"></h5>
-  </div><br><br>
-<div class="titulo2">CONVERSOR DE TEMPERATURAS </div>
-  <div class="tabela">
-    <label for="temperatura"><h5>Insira em graus Celcius</h5></label>
-    <input type="number" id="valorTemperatura" size="2" />
-    <button type="submit" onclick="ConverterTemperatura()">Converter</button>
-    <h5 id="valorTemperaturaConvertido"></h5>
-</div><br><br><br>
- </section>
+  <section class="conteudo-principal">
+    <div style="width: 100%; max-width: 750px; margin: 0 auto;">
+      <h2 class="titulo-simples">Conversor de Valores</h2>
+      <p style="color: rgba(245,245,245,0.7); text-align: center; margin-top: 8px; margin-bottom: 24px;">Conversões de moedas, distâncias e temperaturas.</p>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 24px;">
+          <div class="hobby-section-title" style="margin-bottom: 16px;">Real → Dólar, Euro e Bitcoin</div>
+          <div style="display: flex; gap: 10px; align-items: flex-end;">
+            <div style="flex: 1;">
+              <label style="color: rgba(245,245,245,0.7); font-size: 12px; display: block; margin-bottom: 6px;">Valor em Reais (R$)</label>
+              <input type="number" id="valorMoeda" style="width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 10px 12px; color: #f5f5f5; font-size: 14px; outline: none;">
+            </div>
+            <button onclick="ConverterMoeda()" style="background: rgba(185,235,210,0.2); border: 1px solid rgba(185,235,210,0.5); color: rgb(185,235,210); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;">Converter</button>
+          </div>
+          <p id="valorMoedaConvertido" style="margin-top: 14px; color: #f5f5f5; font-size: 14px; min-height: 20px;"></p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 24px;">
+          <div class="hobby-section-title" style="margin-bottom: 16px;">Distância km → Anos-luz</div>
+          <div style="display: flex; gap: 10px; align-items: flex-end;">
+            <div style="flex: 1;">
+              <label style="color: rgba(245,245,245,0.7); font-size: 12px; display: block; margin-bottom: 6px;">Distância em Kilômetros</label>
+              <input type="number" id="valorDistancia" style="width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 10px 12px; color: #f5f5f5; font-size: 14px; outline: none;">
+            </div>
+            <button onclick="ConverterDistancia()" style="background: rgba(185,235,210,0.2); border: 1px solid rgba(185,235,210,0.5); color: rgb(185,235,210); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;">Converter</button>
+          </div>
+          <p id="valorDistanciaConvertido" style="margin-top: 14px; color: #f5f5f5; font-size: 14px; min-height: 20px;"></p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 24px;">
+          <div class="hobby-section-title" style="margin-bottom: 16px;">Temperatura Celsius → Fahrenheit e Kelvin</div>
+          <div style="display: flex; gap: 10px; align-items: flex-end;">
+            <div style="flex: 1;">
+              <label style="color: rgba(245,245,245,0.7); font-size: 12px; display: block; margin-bottom: 6px;">Temperatura em °C</label>
+              <input type="number" id="valorTemperatura" style="width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 10px 12px; color: #f5f5f5; font-size: 14px; outline: none;">
+            </div>
+            <button onclick="ConverterTemperatura()" style="background: rgba(185,235,210,0.2); border: 1px solid rgba(185,235,210,0.5); color: rgb(185,235,210); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;">Converter</button>
+          </div>
+          <p id="valorTemperaturaConvertido" style="margin-top: 14px; color: #f5f5f5; font-size: 14px; min-height: 20px;"></p>
+        </div>
+
+      </div>
+      <div style="text-align: center; margin-top: 24px;">
+        <a href="desenvolvimento.html" style="color: rgba(185,235,210,0.7); font-size: 13px;">← Voltar para Desenvolvimento</a>
+      </div>
+    </div>
+  </section>
   </main>
 
-  <footer>
-    <div>Site todo desenvolvido por Yan Lemke de Castro</div>
-    <div>@yanldc©</div>
-    <div><a href="https://www.instagram.com/yanldc/" target="_blank"><img src="fotos/insta.png"  width="20" height="20"></a>
-    <a href="https://www.linkedin.com/in/yan-lemke-de-castro-889151249" target="_blank"><img src="fotos/linkedin.png" width="20" height="20"></a>
-    <a href="https://github.com/yanldc" target="_blank"><img src="fotos/github.png" width="20" height="20"></a></div>
-  </footer>
+  <div id="footer-nav"></div>
 </body>
-<script src="conversor.js"></script>
+  <script src="footer.js" defer></script>
+  <script src="menu.js" defer></script>
+  <script src="conversor.js"></script>

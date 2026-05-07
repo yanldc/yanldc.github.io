@@ -4,51 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvimento</title>
+  <meta name="description" content="Projetos desenvolvidos por Yan Lemke — Calculadora de média e Conversor de valores em JavaScript.">
+  <title>Desenvolvimento — Yan Lemke</title>
   <link rel="shortcut icon" href="fotos/logo.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="mobile.css">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <img class="cabecalho-imagem" src="fotos/logo.png">
-    <nav class="cabecalho-menu">
-    	<ul>
-		  <li><a class="cabecalho-menu-item" href="index.html">Quem sou </a></li>
-		  <li><a class="cabecalho-menu-item" href="formacao.html">Formação </a></li>
-		  <li><a class="cabecalho-menu-item" href="profissional.html">Profissional </a></li>
-      <li><a class="cabecalho-menu-item" href="#">Hobbys </a>
-			   <ul>
-			     <li><a class="cabecalho-menu-item" href="pc.html">Computadores</a></li>
-		       <li><a class="cabecalho-menu-item" href="geek.html">Geek     </a></li>
-		    	 <li><a class="cabecalho-menu-item" href="musica.html">Musica   </a></li>
-			   </ul>
-       </li>
-	      <li><a class="cabecalho-menu-item" href="desenvolvimento.html">Desenvolvimento </a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="menu-nav"></div>
 <main class="conteudo">
     <section class="conteudo-principal">
-      <div class="conteudo-principal-escrito">
-        <h1 class="titulo">Meus desenvovimentos em Java Script</h1>
-        <div class="menu-h">
-        <ul >
-		  <li><a href="media.html"><u>Calculadora de média em JS</u> </a></li><br>
-	      <li><a href="conversor.html"><u>Conversor de valores em JS</u></a></li>
-	      <li><a href="#"> </a></li>
-	   </ul>
-	</div>
+      <div style="width: 100%; max-width: 750px; margin: 0 auto;">
+        <h2 class="titulo-simples">Projetos Desenvolvidos</h2>
+        <div class="timeline" style="margin-top: 24px;">
+
+          <div class="timeline-card" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+            <div>
+              <div class="cargo">Calculadora de Média</div>
+              <div class="descricao" style="margin-top: 4px;">Calcula a média de notas por bimestre e exibe o resultado com aprovação ou reprovação.</div>
+              <div style="margin-top: 10px;"><span class="skill-tag">JavaScript</span></div>
+            </div>
+            <a href="media.html" style="white-space: nowrap; background: rgba(185,235,210,0.15); border: 1px solid rgba(185,235,210,0.4); color: rgb(185,235,210); border-radius: 8px; padding: 8px 16px; font-size: 13px; font-weight: 500; transition: background 0.2s;">Ver projeto</a>
+          </div>
+
+          <div class="timeline-card" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+            <div>
+              <div class="cargo">Conversor de Valores</div>
+              <div class="descricao" style="margin-top: 4px;">Converte moedas (Real para Dólar, Euro e Bitcoin), distâncias (km para anos-luz) e temperaturas (Celsius para Fahrenheit e Kelvin).</div>
+              <div style="margin-top: 10px;"><span class="skill-tag">JavaScript</span></div>
+            </div>
+            <a href="conversor.html" style="white-space: nowrap; background: rgba(185,235,210,0.15); border: 1px solid rgba(185,235,210,0.4); color: rgb(185,235,210); border-radius: 8px; padding: 8px 16px; font-size: 13px; font-weight: 500; transition: background 0.2s;">Ver projeto</a>
+          </div>
+
+        </div>
       </div>
-  </section>
+    </section>
   </main>
 
-  <footer>
-    <div>Site todo desenvolvido por Yan Lemke de Castro</div>
-    <div>@yanldc©</div>
-    <div><a href="https://www.instagram.com/yanldc/" target="_blank"><img src="fotos/insta.png"  width="20" height="20"></a>
-    <a href="https://www.linkedin.com/in/yan-lemke-de-castro-889151249" target="_blank"><img src="fotos/linkedin.png" width="20" height="20"></a>
-    <a href="https://github.com/yanldc" target="_blank"><img src="fotos/github.png" width="20" height="20"></a></div>
-  </footer>
+  <div id="footer-nav"></div>
+  <script src="footer.js" defer></script>
+  <script src="menu.js" defer></script>
 </body>
